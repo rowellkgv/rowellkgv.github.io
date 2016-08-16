@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	$("#events-content").hide();
 	$("#contact-content").hide();
+	$("#pastSites-content").hide();
 	$("#home").click(function(){
 		$("#events-content").fadeOut("fast",function(){
 			$("#contact-content").fadeOut("fast",function(){

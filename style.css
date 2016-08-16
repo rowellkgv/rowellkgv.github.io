@@ -46,3 +46,19 @@ body{
 #nav-wrapper{
 	min-height: 50px;
 }
+
+.person{
+	display: block;
+	float: left;
+	margin: 10px 20px 10px 0px;
+}
+
+.person-set{
+	display: block;
+	overflow: hidden;
+	font-size: 15px;
+}
+
+.nav > li{
+	cursor: pointer;
+}
