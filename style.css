@@ -32,7 +32,7 @@ body{
 }
 
 #content{
-	height: 1000px;
+	min-height: 1000px;
 	background-color: #F3F3FF;
 	padding: 30px;
 }
@@ -57,6 +57,10 @@ body{
 	display: block;
 	overflow: hidden;
 	font-size: 15px;
+}
+
+#contact-content{
+	font-sixe: 17px;
 }
 
 .nav > li{
