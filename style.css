@@ -1,5 +1,5 @@
 body{
-	background-color: #009;
+	background-color: #21A;
 	font-size: 18px;
 }
 
@@ -14,7 +14,6 @@ body{
 
 #header{
 	width: 100%;
-	height: 200px;
 	background-color: #EEE;
 }
 
@@ -22,7 +21,7 @@ body{
 	border-radius: 0px;
 	margin-bottom: 0px;
 	background-color: #ccccff;
-	background-image: linear-gradient(to bottom,#c6e4f9 0,#abd6f4 100%);
+	background-image: linear-gradient(to bottom,#e6f4f9 0,#cbe6f4 100%);
 	border-color: #c6e4f9;
 	box-shadow: inset 0 1px 0 rgba(200,200,245,.15),0 1px 5px rgba(0,0,0,.075);
 }
@@ -65,4 +64,13 @@ body{
 
 .nav > li{
 	cursor: pointer;
+}
+
+.navbar-nav > li:hover{
+	background-image: linear-gradient(to bottom,#b6d4f9 0,#cbe6f4 100%);
+}
+
+.navbar-nav > li:active{
+	color:#000;
+	box-shadow: inset rgba(255,255,255,0.4) 0px -2px 5px;
 }
