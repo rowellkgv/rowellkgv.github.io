@@ -1,5 +1,5 @@
 body{
-	background-color: #21A;
+	background-color: #B5D9E6;
 	font-size: 18px;
 }
 
@@ -23,7 +23,7 @@ body{
 	background-color: #ccccff;
 	background-image: linear-gradient(to bottom,#e6f4f9 0,#cbe6f4 100%);
 	border-color: #c6e4f9;
-	box-shadow: inset 0 1px 0 rgba(200,200,245,.15),0 1px 5px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 0 rgba(200,200,245,.15),0 1px 5px rgba(0,0,0,.3);
 }
 
 #nav-tabs{
@@ -60,6 +60,12 @@ body{
 
 #contact-content{
 	font-sixe: 17px;
+}
+
+#rowell-logo{
+	float: left;
+	margin-top: 3px;
+	margin-right: 15px;
 }
 
 .nav > li{
