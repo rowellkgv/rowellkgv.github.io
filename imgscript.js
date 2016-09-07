@@ -1,8 +1,9 @@
 var events = ["Badminton", "Football", "Tennis"];
 var imgs = {};
 var desc = {};
+var img_suffix = ".jpg";
 
-imgs.Badminton = ["IMG_6890.JPG","IMG_6905.JPG","IMG_6912.JPG","IMG_6925.JPG","IMG_6946.JPG","IMG_6951.JPG","IMG_6953.JPG","IMG_6975.JPG","IMG_6977.JPG","IMG_7002.JPG","IMG_7024.JPG","IMG_7057.JPG","IMG_7067.JPG","IMG_7081.JPG","IMG_7086.JPG"];
+imgs.Badminton = ["IMG_6890","IMG_6905","IMG_6912","IMG_6925","IMG_6946","IMG_6951","IMG_6953","IMG_6975","IMG_6977","IMG_7002","IMG_7024","IMG_7057","IMG_7067","IMG_7081","IMG_7086"];
 desc.Badminton = "Interhouse badminton is an enjoyable but challenging event. This year Rowell did rather well, winning quite a few matches. The event is divided by year group, with all players being divided into two teams: elite and non-elite. In each team, there are 3 singles and 2 doubles games. After each team plays against each house, the team that has won the most games wins the entire event. It’s a very fun event, especially with all the players encouraging each other. Although some people are less experienced in badminton, they still joined due to their house spirit, which is specifically what makes us proud.";
 
 desc.Football = "This year Rowell House performed exceptionally well in the Interhouse football competition. After a rather rough start with the A grade boys, our Open grade girls team stepped up to the platter and performed admirably, finishing first! This was then followed up with strong performances in the B grade, C grade and D grade boys competitions. Overall we finished in second place, which was extremely impressive - we hope to take the top spot next year!";
@@ -24,7 +25,7 @@ $(document).ready(function(){
 	}
 	for(j=0;j<events.length;j++){
 		if(imgs[events[j]]){
-			document.getElementById(events[j] + "-gallery-main-photo").src = "images/"+events[j] + "/" + imgs[events[j]][0];
+			document.getElementById(events[j] + "-gallery-main-photo").src = "images/"+events[j] + "/" + imgs[events[j]][0] + img_suffix;
 			var divSelector = "#"+events[j]+"-gallery-photo-selection";
 		/*
 		console.log(imgs[events[j]]);
@@ -32,7 +33,7 @@ $(document).ready(function(){
 		*/
 			var elements = "";
 			for(var i = 0; i<imgs[events[j]].length; i++){
-				var newElement = '<img src="images/'+events[j]+"/"+imgs[events[j]][i]+'" width="15%" height="auto" class="gallery-photo" />';
+				var newElement = '<img src="images/'+events[j]+"/"+imgs[events[j]][i]+img_suffix+'" width="15%" height="auto" class="gallery-photo" />';
 				elements = elements + newElement;
 				//console.log(newElement);
 			}
