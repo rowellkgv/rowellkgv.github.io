@@ -103,10 +103,16 @@ h1, h3, h4{
 	margin: 10px 20px 10px 0px;
 }
 
+.person-image{
+	margin: 5px 10px 10px 0px;
+	border: 1px solid black;
+}
+
 .person-set{
 	display: block;
 	overflow: hidden;
 	font-size: 15px;
+	font-weight: bold;
 }
 
 #contact-content{
