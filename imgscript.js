@@ -1,4 +1,4 @@
-var events = ["Badminton", "Basketball", "Football", "Mathematics"];
+var events = ["Badminton", "Basketball", "Debating", "Football", "Mathematics", "Tennis", "Volleyball"];
 var imgs = {};
 var desc = {};
 var img_suffix = ".jpg";
@@ -9,6 +9,7 @@ desc.Badminton = "Interhouse badminton is an enjoyable but challenging event. Th
 imgs.Basketball = ["DSC_0085","DSC_0086","DSC_0087","DSC_0088","DSC_0093","DSC_0096","DSC_0099","DSC_0104","DSC_0107","DSC_0110"];
 desc.Basketball = "Throughout the term, A, B, C, and D Grade all participated in the interhouse basketball competition. For all those who took part, congratulations! We did very well as a house.";
 
+imgs.Debating = ["img1"];
 desc.Debating = "Interhouse debating is an intellectual and competitive event, based on the standard parliamentary debate structure found in competitions. Teams of three work together on a motion given to them a few days prior, and give passionate and well reasoned individual speeches on one side of the debate. A combination of strong tactical arguments and persuasive speaking is therefore required to succeed at this event.";
 
 imgs.Football = ["IMAGE04","IMAGE08","IMAGE11","IMAGE13","IMAGE15","IMAGE20","IMAGE21","IMAGE22","IMAGE34","IMAGE42"];
@@ -18,6 +19,8 @@ imgs.Mathematics = ["DSC_0072","DSC_0073","DSC_0075","DSC_0078","DSC_0081"];
 desc.Mathematics = "Interhouse mathematics was a new and exciting event this year. It involved all the year groups and almost every single maths class across a timespan of one week. Students were split into groups and given a set period of time to solve mathematically stimulating questions. Rowell managed to place third in the overall standings for this event, a ranking that we hope to improve in the coming years. Overall it was an intriguing and fruitful experience.";
 
 desc.Tennis = "Interhouse tennis has started off fairly well for Rowell. Although the competition has not finished yet, Rowell house has had a very strong start with Jahan Balani and Alan Sou performing admirably in the B Grade Boys tournament. We hope Rowell House can continue perform to the high level set by the B Grade Boys and win the Interhouse Competition!";
+
+imgs.Volleyball = ["IMG_5248","IMG_5249","IMG_5250","IMG_5251","IMG_5252","IMG_5258","IMG_5259","IMG_5260","IMG_5261","IMG_5262","IMG_5263","IMG_5264"];
 
 $(document).ready(function(){
 	var j = 0;
@@ -29,7 +32,11 @@ $(document).ready(function(){
 			$("#nav-tabs").append('<li role="presentation"><a href="#'+events[j]+'" aria-controls="'+events[j]+' role="tab" data-toggle="tab">'+events[j]+'</a></li>');
 			$('#tab-content').append('<div role="tabpanel" class="tab-pane fade in" id="'+events[j]+'">');
 		}
-		$("#"+events[j]).append('<div class="gallery"><div class="gallery-main-container"><h1 class="gallery-header">'+events[j]+'</h1><table class="gallery-table"><tr><td class="first-col"><div id="'+events[j]+'-gallery-description" class="gallery-description"></div></td><td class="second-col"><img id="'+events[j]+'-gallery-main-photo" class="gallery-main-photo" align="right" /></td></tr></table></div><div id="'+events[j]+'-gallery-photo-selection" class="gallery-photo-selection"></div></div>');
+		if(imgs[events[j]]){
+			$("#"+events[j]).append('<div class="gallery"><div class="gallery-main-container"><h1 class="gallery-header">'+events[j]+'</h1><table class="gallery-table"><tr><td class="first-col"><div id="'+events[j]+'-gallery-description" class="gallery-description"></div></td><td class="second-col"><img id="'+events[j]+'-gallery-main-photo" class="gallery-main-photo" align="right" /></td></tr></table></div><div id="'+events[j]+'-gallery-photo-selection" class="gallery-photo-selection"></div></div>');
+		}else{
+			$("#"+events[j]).append('<div class="gallery"><div class="gallery-main-container"><h1 class="gallery-header">'+events[j]+'</h1><table class="gallery-table"><tr><td class="first-col"><div id="'+events[j]+'-gallery-description" class="gallery-description"></div></td></table></div><div id="'+events[j]+'-gallery-photo-selection" class="gallery-photo-selection"></div></div>');
+		}
 		document.getElementById(events[j] + "-gallery-description").innerHTML = desc[events[j]];
 	}
 	for(j=0;j<events.length;j++){

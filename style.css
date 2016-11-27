@@ -4,6 +4,7 @@ body{
 	background-color: #9CD2DC; /* #EAEAF6; /*E0E0E0; /*#0D47A1; /*#B3E5FC;/*#B5D9E6;*/
 	font-size: 18px;
 	font-family: 'Calibri Light', Calibri, sans-serif;
+	font-weight: lighter;
 	
 	/*
 	Fonts
@@ -33,7 +34,6 @@ h1, h3, h4{
 	margin-right: 5%;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	border: 1px solid black;
 	cursor: pointer;
 }
 
@@ -46,8 +46,8 @@ h1, h3, h4{
 	width: 100%;
 	height: auto;
 	display: inline;
-	border: 2px solid black;
-	box-shadow: 2px 2px 5px black;
+	border: 8px solid #B9B9B9;
+	/* box-shadow: 2px 2px 5px black;*/
 	margin: 0% 10% 30px 0%;
 }
 
