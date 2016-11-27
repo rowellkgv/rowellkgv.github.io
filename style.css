@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body{
-	background-color: #EAEAF6; /*E0E0E0; /*#0D47A1; /*#B3E5FC;/*#B5D9E6;*/
+	background-color: #9CD2DC; /* #EAEAF6; /*E0E0E0; /*#0D47A1; /*#B3E5FC;/*#B5D9E6;*/
 	font-size: 18px;
 	font-family: 'Calibri Light', Calibri, sans-serif;
 	
@@ -126,6 +126,7 @@ h1, h3, h4{
 
 .person-image{
 	margin: 5px 10px 10px 0px;
+	width: 100px;
 	/* border: 1px solid black; */
 }
 
@@ -137,7 +138,7 @@ h1, h3, h4{
 }
 
 #contact-content{
-	font-sixe: 17px;
+	font-size: 17px;
 }
 
 #rowell-logo{
@@ -146,16 +147,28 @@ h1, h3, h4{
 	margin-right: 15px;
 }
 
+.nav{
+	width: 100%;
+	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 .nav > li{
 	cursor: pointer;
 	font-weight: bold;
+	width: 33.3%;
+	text-align: center;
 }
 
 #navbar{
 	border-radius: 0px;
 	color: #FFF;
 	margin-bottom: 0px;
-	background-color: #9CD2DC;
+	background-color: #8ABDD2;
 	border: none;
 	background-image: none; /* linear-gradient(to bottom, #B3E5FC 0, #4FC3F7 100%); /*#0D47A1 0, #1565C0 100%);*/
 	/*border-color: #c6e4f9;*/
@@ -166,15 +179,18 @@ h1, h3, h4{
 	
 }
 
-.navbar-nav > li:active{
+/*.navbar-nav > li:active{
 	color:#FFF;
 	box-shadow: inset rgba(255,255,255,0.4) 0px -2px 5px;
-}
+}*/
 
 .navbar-default .navbar-nav > li > a{
 	color: #FFF;
 	font-family: 'Calibri Light', Calibri, sans-serif;
 	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1.5px;
+	font-size: 20px;
 }
 
 #house-captain-image{
