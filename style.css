@@ -16,6 +16,7 @@ body{
 	margin: auto;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 }
 
 h1, h3, h4{
@@ -80,6 +81,7 @@ h1, h3, h4{
 	width: 80%;
 	height: auto;
 	overflow: hidden;
+	background-color: #FFFFFF;
 }
 
 #header{
@@ -95,7 +97,6 @@ h1, h3, h4{
 
 #content{
 	min-height: 1000px;
-	/* background-color: #FFFFFF; */
 	padding: 30px;
 }
 
@@ -125,7 +126,7 @@ h1, h3, h4{
 
 .person-image{
 	margin: 5px 10px 10px 0px;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
 .person-set{
@@ -172,7 +173,7 @@ h1, h3, h4{
 
 .navbar-default .navbar-nav > li > a{
 	color: #FFF;
-	font-family: 'Calibri Light', sans-serif;
+	font-family: 'Calibri Light', Calibri, sans-serif;
 	font-weight: bold;
 }
 
