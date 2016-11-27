@@ -22,6 +22,9 @@ body{
 
 h1, h3, h4{
 	font-family: 'Montserrat', 'Calibri Light', sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 0px;
 }
 
 .gallery{
@@ -57,12 +60,12 @@ h1, h3, h4{
 
 .first-col{
 	padding-right: 10%;
-	padding-top: 3%;
+	padding-top: 0%;
 	vertical-align: text-top;
 }
 
 .gallery-table{
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 .gallery-photo:hover{
