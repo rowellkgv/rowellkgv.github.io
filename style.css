@@ -98,10 +98,12 @@ h1, h3, h4{
 #content{
 	min-height: 1000px;
 	padding: 30px;
+	width: calc(100% - 290px);
 }
 
 #sidebar{
-	float:right;
+	/*float:right;*/
+	float: right;
 	padding: 30px;
 	margin-left: 30px;
 	margin-top: 90px;
@@ -147,7 +149,7 @@ h1, h3, h4{
 	margin-right: 15px;
 }
 
-.nav{
+#nav-ul{
 	width: 100%;
 	margin: auto;
 	margin-left: auto;
@@ -160,8 +162,15 @@ h1, h3, h4{
 .nav > li{
 	cursor: pointer;
 	font-weight: bold;
+}
+
+#nav-ul > li{
 	width: 33.3%;
 	text-align: center;
+}
+
+#nav-tabs{
+	overflow:hidden;
 }
 
 #navbar{
@@ -176,7 +185,7 @@ h1, h3, h4{
 }
 
 .navbar-nav > li:hover{
-	
+	color: #FFF;
 }
 
 /*.navbar-nav > li:active{
@@ -194,7 +203,7 @@ h1, h3, h4{
 }
 
 #house-captain-image{
-	width:35%;
+	width:50%;
 	height:auto;
 	float: right;
 	margin-right: 10px;
